@@ -1,0 +1,49 @@
+
+* {
+  margin: 30;
+  padding: 20;
+  box-sizing: flex 1 1 auto;
+  }
+
+body {text-align: center;
+}
+
+header {
+background-color: forestgreen;
+}
+section id {box-sizing: var(body);
+}
+footer{background-color: rgb(74, 112, 36);
+}
+ a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+nav li{
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul{
+    padding-bottom: 2%;
+}
+#info {background-color: rgb(206, 198, 198);
+    padding-bottom:2%;
+}
+#sobre{background-color: rgb(195, 240, 201);
+    padding-bottom: 2%;
+}
+#programa{background-color: rgb(230, 220, 196);
+    padding-bottom: 2%;
+}
+article
+{
+   background-color:rgba(163, 147, 147, 0.8);
+
+}
+img {
+    border-radius: 50%;
+}
+#inscricao{
+    background-color: rgb(182, 204, 101);
+}
