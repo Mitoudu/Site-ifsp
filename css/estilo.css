@@ -2,32 +2,30 @@
 * {
   margin: 30;
   padding: 20;
-  box-sizing: flex 1 1 auto;
+  box-sizing: border-box;
   }
 
 body {text-align: center;
+    margin: 0%;
 }
-
+section{margin: 0%;}
+/*******************HEADER***************************************/
 header {
-background-color: forestgreen;
+background-color: rgb(69, 231, 69);
 }
 section id {box-sizing: var(body);
 }
-footer{background-color: rgb(74, 112, 36);
+
+
+/**********************FOOTER****************************************/
+footer{background-color: rgb(69, 231, 69);
 }
  a:hover {
     color: red;
     text-decoration: underline;
 }
 
-nav li{
-    text-decoration: none;
-    display: inline-block;
-}
-nav ul{
-    padding-bottom: 2%;
-}
-#info {background-color: rgb(206, 198, 198);
+#info {background-color: rgb(250, 250, 250);
     padding-bottom:2%;
 }
 #sobre{background-color: rgb(195, 240, 201);
@@ -37,13 +35,39 @@ nav ul{
     padding-bottom: 2%;
 }
 article
-{
-   background-color:rgba(163, 147, 147, 0.8);
+{height: 350px;
+    width: 30%;
+   display: inline-block;
+   border-left: solid 3px;
+   border-color: rgb(69,231,69);
+   overflow: auto;
 
 }
 img {
     border-radius: 50%;
 }
 #inscricao{
-    background-color: rgb(182, 204, 101);
+    background-color: rgb(101, 204, 101);
+}
+form{
+margin:0 auto;
+
+}
+h2{margin-block-end: auto;
+}
+li{width:10% ;
+display: inline-block;
+padding: 10px;
+}
+#palestrantes img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.tamanho{
+    width: 100%;
+}
+.btn {
+    background-color: blue;
+    color: white;
 }
