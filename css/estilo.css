@@ -1,73 +1,188 @@
-
-* {
-  margin: 30;
-  padding: 20;
-  box-sizing: border-box;
-  }
-
-body {text-align: center;
-    margin: 0%;
-}
-section{margin: 0%;}
-/*******************HEADER***************************************/
-header {
-background-color: rgb(69, 231, 69);
-}
-section id {box-sizing: var(body);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* CORPO */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-/**********************FOOTER****************************************/
-footer{background-color: rgb(69, 231, 69);
-}
- a:hover {
-    color: red;
-    text-decoration: underline;
-}
-
-#info {background-color: rgb(250, 250, 250);
-    padding-bottom:2%;
-}
-#sobre{background-color: rgb(195, 240, 201);
-    padding-bottom: 2%;
-}
-#programa{background-color: rgb(230, 220, 196);
-    padding-bottom: 2%;
-}
-article
-{height: 350px;
-    width: 30%;
-   display: inline-block;
-   border-left: solid 3px;
-   border-color: rgb(69,231,69);
-   overflow: auto;
-
-}
-img {
-    border-radius: 50%;
-}
-#inscricao{
-    background-color: rgb(101, 204, 101);
-}
-form{
-margin:0 auto;
-
-}
-h2{margin-block-end: auto;
-}
-li{width:10% ;
-display: inline-block;
-padding: 10px;
-}
-#palestrantes img{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
-.tamanho{
-    width: 100%;
-}
-.btn {
-    background-color: blue;
+/* HEADER */
+header{
+    background-color: #004080;
     color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
+
+/* MENU */
+nav ul{
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ffcc00;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 30px;
+}
+
+/* SECTIONS */
+section{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ÁREA PRINCIPAL */
+#info{
+    text-align: center;
+    align-items: center;
+}
+
+/* BOTÃO */
+.btn{
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #0066cc;
+}
+
+/* PROGRAMA */
+#programa ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style: none;
+}
+
+/* GRID DOS PALESTRANTES */
+.grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.grid article{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* IMAGENS */
+.grid img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 3px solid #004080;
+}
+
+/* FORMULÁRIO */
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* INPUTS */
+.tamanho{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer{
+    background-color: #004080;
+    color: white;
+    text-align: center;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 768px){
+
+    header{
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
